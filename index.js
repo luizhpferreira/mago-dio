@@ -12,19 +12,19 @@ class Heroi {
         let ataque;
         switch (this.tipo) {
             case 'mago':
-                ataque = 'usou magia';
+                ataque = 'magia';
                 break;
             case 'guerreiro':
-                ataque = 'usou espada';
+                ataque = 'espada';
                 break;
             case 'monge':
-                ataque = 'usou artes marciais';
+                ataque = 'artes marciais';
                 break;
             case 'ninja':
-                ataque = 'usou shuriken';
+                ataque = 'shuriken';
                 break;
             default:
-                ataque = 'usou um ataque indefinido';
+                ataque = 'um ataque indefinido';
         }
 
         console.log(`O ${this.tipo} atacou usando ${ataque}`);
@@ -37,7 +37,7 @@ class Heroi {
     }
 
     aumentarStats() {
-        // Lógica para aumentar as estatísticas do herói ao subir de nível
+        
     }
 
     sofrerDano(dano) {
@@ -63,7 +63,7 @@ class Heroi {
     }
 }
 
-// Exemplo de uso:
+
 const mago = new Heroi('Merlin', 100, 'mago');
 mago.atacar();
 mago.subirNivel();
